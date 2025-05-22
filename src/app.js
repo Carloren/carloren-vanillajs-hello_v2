@@ -17,13 +17,12 @@ function excuseGen() {
 
   let excuse = "Siento no poder ayudarte, pero ";
 
-  for (let i = 0; i < phrase.length; i++) {
-    if (i == phrase.length - 1) {
-      excuse += phrase[i][Math.floor(Math.random() * phrase[i].length)] + '.'
-    } else {
-      excuse += phrase[i][Math.floor(Math.random() * phrase[i].length)] + ' '
-    }
-  }
+  phrase.map(arr => {
+    (phrase.indexOf(arr) == phrase.length - 1) ?
+      excuse += `${arr[Math.floor(Math.random() * arr.length)]}.`
+      :
+      excuse += `${arr[Math.floor(Math.random() * arr.length)]} `
+  })
 
   document.getElementById("excuse").innerHTML = excuse;
 

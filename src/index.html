@@ -14,24 +14,15 @@
 
 <body>
   <!-- Write your HTML code here, you can delete everything withing the body tags -->
-  <div class="container-fluid text-center">
-    <h1 class="mt-5">Hello Rigo!</h1>
-    <img src="./assets/img/rigo-baby.jpg" />
-    <p class="alert alert-warning mt-4">
-      If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-      an error
-    </p>
+  <div class="row m-4 justify-content-center">
 
-    <p id="excuse"></p> <!-- Aquí está el párrafo que montará la excusa-->
+    <button id="button">
+      <p>GENERAR EXCUSA</p>
+    </button>
 
-    <div class="fixed-bottom p-4">
-      Made with ❤️ by
-      <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-    </div>
+    <p id="excuse" class="text-center my-4"></p> <!-- Aquí está el párrafo que montará la excusa-->
+
   </div>
-  <button id="button">
-    <p>GENERAR EXCUSA</p>
-  </button>
 
   <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
   <script type="module" src="/app.js"></script>
